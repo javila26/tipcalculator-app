@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 90vh;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    display: block;
+    padding-top: 2rem;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1.1rem;
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+main{
+    background-color: white;
+    height: 450px;
+    width: auto;
+    padding: 0 1rem 0 1rem;
+    margin: 4rem 0 0 0;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.left-box{
+    background-color: white;
+}
+
+.boxes{
+    width: 450px;
+    height: 90%;
+    border-radius: 1rem;
+}
+
+.right-box{
+    background-color: hsl(183, 100%, 15%);
+    width: 420px;
+    height: 85%;
+}
+
+.buttons{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.buttons input{
+    width: 7rem;
+    padding: 0.4rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 0.3rem;
+    border: none;
+    outline:none;
+}
+
+.left-box .buttons input[type="text"]{
+    width: 5.9rem; 
+    text-align: center;
+    font-size: 1.5rem ;
+    color: hsl(186, 14%, 43%);
+    background-color: hsl(189, 41%, 97%);
+}
+
+.left-box input[type="tel"]{
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: large;
+    text-align: right;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 0.3rem;
+}
+
+#billAmount{
+    background-image: url("../images/icon-dollar.svg");
+    background-size: 0.6rem;
+	background-repeat: no-repeat;
+    background-position: 1rem 50%;
+    margin: 0 0 1rem 1.5rem;
+    padding: 0.3rem 0.7rem;
+    width: 23rem;
+}
+
+#numPeople{
+    background-image: url("../images/icon-person.svg");
+    background-size: 0.6rem;
+	background-repeat: no-repeat;
+    background-position: 1rem 50%;
+    margin: 0 0 1rem 1.5rem;
+    padding: 0.3rem 0.7rem;
+    width: 23rem;
+}
+
+.smallBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallBox > div{
+    margin: 2rem 0 0 1rem;
+    width: fit-content;
+}
+
+.smallBox > div > h2{
+    margin-bottom: 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.smallBox > div > p{
+    margin-left: 1.5rem;
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+}
+
+.smallBox > h1{
+    color: hsl(172, 67%, 45%);
+    width: fit-content;
+    margin-right: 2rem;
+    font-size: 3em;
+}
+
+.right-box > input{
+    border: none;
+    outline:none;
+    padding: 0.5rem;
+    background-color:  #0d686d;
+    border-radius: 0.2rem;
+    width: 85%;
+    margin: 25% 1rem 0 2rem;
+    color: #035a61;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 319px) and (max-width: 480px){ 
+    
+    body{
+        display: block;
+    }
+
+    body > h1{
+        margin: 0 0 2rem 7rem;
+    }
+
+    main{
+        height: 770px;
+        width: 100%;
+        background-color: white;
+        margin: 0;
+        padding: 0 0 2.5rem;
+    }
+
+    .boxes{
+        height: 480px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #numPeople, #billAmount{
+        width: 18rem;
+        padding: 0.7rem;
+    }
+
+    .left-box{
+        width: 23rem;
+        height: 30rem;
+    }
+
+    .buttons{
+        align-items: center;
+        width: 20rem;
+        margin: 0 0 0 1.5rem;
+    }
+
+    h2{
+        width: fit-content;
+    }
+    .buttons input{
+        width: 45%;
+    }
+
+    .left-box .buttons input[type="text"]{
+        width: 8rem;
+    }
+
+    .right-box{
+        width: 19.5rem;
+        height: 18rem;
+        margin-right: 0.6rem;
+    }
+
+    .right-box h1{
+        font-size: 2rem;
+    }
+
+    .smallBox > div{
+        margin: 1.2rem 0 0 1rem;
+    }
+
+    .right-box > input{
+        margin: 15% 0 0 1.5rem;
+    }
+
+    .title {
+        padding-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
