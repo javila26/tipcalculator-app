@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/tip-calculator-made-with-vainilla-html-css-and-js-v8mha0QkwK)
+- Live Site URL: [Live Site URL](https://javila26.github.io/tipcalculator-app/)
 
 ## My process
 
